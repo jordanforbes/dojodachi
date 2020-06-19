@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Monster 
+
+<div class="text-center">
+   <div class="row">
+       Fullness: @ViewBag.Fullness Happiness: @ViewBag.Happiness Meals: @ViewBag.Meals Energy: @ViewBag.Energy
+   </div>
+   <div class="row jumbotron">
+       <img style="height:300px"src="~/image/armjet.jpg" alt="big beefy arms on this jet" />
+       <br>
+       <p>@ViewBag.Description</p>
+   </div>
+   <div class="row">
+       <a href="feed" class="btn">Feed</a>
+       <a href="play" class="btn">Play</a>
+       <a href="work" class="btn">Work</a>
+       <a href="sleep" class="btn">Sleep</a>
+   </div>
+</div>
